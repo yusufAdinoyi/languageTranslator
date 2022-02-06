@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Arabic to English</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h2>English-Other Languages <span class="primary-color">Translator</span></h2>
+      <p class="lead">Dynamically write or click record voice to type word in the box</p>
+      <textarea id="text-box" placeholder="Enter a word"></textarea>
+      <select id="lang-type">
+        <option id="arabic">Translate in Arabic</option>
+        <option id="french">Translate in French</option>
+        <option id="chinese">Translate in Chinese</option>
+        <option id="spanish">Translate in Spanish</option>
+        <option id="latin">Translate in Latin</option>
+        <option id="hausa">Translate in Hausa</option>
+        <option id="igbo">Translate in Igbo</option>
+        <option id="yoruba">Translate in Yoruba</option>
+      </select>
+      <button id="record-start" class="btn btn-primary">Record Voice <i class="fas fa-microphone bg-warning"></i></button>
+      <button id="convert" class="btn btn-secondary">Translate <i class="fas fa-language"></i></button>
+    </div>
+    <div class="result-container">
+      <h1 class="text-center text-light">Translated <span class="primary-color">Text</span></h1>
+      <div id="result-div" class="result-div"></div>
+      <button id="play" class="btn btn-secondary">Voice Out <i class="fas fa-play"></i></button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
